@@ -1,0 +1,28 @@
+{
+  "name": "sveltekit-cf-lib-test-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:library": "./scripts/test-library.sh",
+    "deploy:test": "./scripts/deploy-test.sh",
+    "test:hydration": "node tests/hydration-test.js"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-cloudflare": "^4.6.0",
+    "@sveltejs/kit": "^2.12.0",
+    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "playwright": "^1.40.0",
+    "svelte": "^4.2.18",
+    "svelte-check": "^3.8.4",
+    "typescript": "^5.0.0",
+    "vite": "^5.3.5",
+    "wrangler": "^3.67.1"
+  },
+  "dependencies": {
+    "lucide-svelte": "^0.525.0"
+  }
+}
