@@ -1,6 +1,6 @@
 <script>
   import { onMount, tick } from 'svelte';
-  import { ArrowRight, Settings } from 'lucide-svelte';
+  // import { ArrowRight, Settings } from 'lucide-svelte';
   
   // This is our hydration canary - if this doesn't work, hydration failed
   let mounted = false;
@@ -53,15 +53,6 @@
 <!-- TARGET LIBRARY COMPONENTS GO HERE -->
 <div class="library-test-zone">
   <h2>Library Test Zone</h2>
-  <p>Testing lucide-svelte icons:</p>
-  
-  {#if typeof ArrowRight !== 'undefined' && typeof Settings !== 'undefined'}
-    <div style="display: flex; gap: 20px; margin: 20px 0;">
-      <ArrowRight size={32} />
-      <Settings size={32} />
-      <p>Icons rendered!</p>
-    </div>
-  {:else}
-    <p>Icons not imported yet - add imports to test</p>
-  {/if}
+  <p>Add library components below this line</p>
+  <!-- Example: <IconComponent /> -->
 </div>
